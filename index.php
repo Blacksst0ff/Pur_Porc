@@ -22,6 +22,12 @@
 						case 'createAccount':
 							require_once('users/createAccount.html');
 							break;
+						case 'legislationFrancaise':
+							require_once('pages/legislationFrancaise.html');
+							break;
+						case 'reglement':
+							require_once('pages/reglement.html');
+							break;
 						
 						default:
 							require_once('content.html');

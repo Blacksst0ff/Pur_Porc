@@ -17,7 +17,7 @@ body{
     border-bottom: 2px solid;
     border-radius: 20px;
     border-right: 2px solid;
-    height: 490px;
+    height: auto;
     margin: auto;
     width: 900px;
     margin-bottom: 20px;
@@ -30,7 +30,7 @@ body{
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-radius: 20px;
-    width: 500px;
+    width: 750px;
 }
 
 .box div.row{
@@ -223,4 +223,17 @@ img#logo-approved.right{
 }
 .box div.row div.col-md-6 form div#radio-box p{
 	margin-top: 30px;
+}
+
+.preambule{
+	width: 100%;
+}
+
+div.box div.row div.article form div#art.form-group{
+	width: 70%;
+}
+
+div.box div.row div.article form div#artImg.imgReg.right{
+	margin-right: 10px;
+    margin-top: -115px;
 }
