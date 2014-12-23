@@ -1,5 +1,7 @@
 body{
 	width: 1100px;
+	border-left: 2px solid;
+    border-right: 2px solid;
 }
 
 .clear{
