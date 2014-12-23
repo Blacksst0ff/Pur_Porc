@@ -197,6 +197,11 @@ div.content div.box h1{
     border-bottom: 2px solid;
     border-radius: 20px;
     width: 500px;
+
+}
+
+.box h1{
+	height: 65px;
 }
 
 .panel-default{
@@ -236,6 +241,19 @@ div.box div.row div.article form div#art.form-group{
 div.box div.row div.article form div#artImg.imgReg.right{
 	margin-right: 10px;
     margin-top: -115px;
+}
+
+#mecDet{
+	margin-left: 50px;
+}
+
+#gearImg{
+	margin-top: -70px;
+	margin-right: 80px;
+}
+
+#boxImg{
+	margin-left: 70px;
 }
 
 #pop-up-img{

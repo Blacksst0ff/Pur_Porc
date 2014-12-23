@@ -23,12 +23,17 @@
 							require_once('users/createAccount.html');
 							break;
 						case 'legislationFrancaise':
-							require_once('pages/legislationFrancaise.html');
+							require_once('pages/generalite/legislationFrancaise.html');
 							break;
 						case 'reglement':
-							require_once('pages/reglement.html');
+							require_once('pages/generalite/reglement.html');
 							break;
-						
+						case 'domMeca':
+							require_once('pages/technique/domMeca.html');
+							break;
+						case 'element':
+							require_once('pages/technique/element.html');
+							break;
 						default:
 							require_once('content.html');
 							break;
