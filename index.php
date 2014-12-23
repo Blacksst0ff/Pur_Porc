@@ -34,6 +34,9 @@
 						case 'element':
 							require_once('pages/technique/element.html');
 							break;
+						case 'mon_compte':
+							require_once('users/index.html');
+							break;
 						default:
 							require_once('content.html');
 							break;

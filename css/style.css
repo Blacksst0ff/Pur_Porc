@@ -12,6 +12,10 @@ body{
 	float: right;
 }
 
+.left{
+	float: left;
+}
+
 .box{
 	background-image: url("../img/pa-box.png");
     background-repeat: no-repeat;
@@ -37,6 +41,60 @@ body{
 
 .box div.row{
 	width: 90%;
+	margin: auto;
+}
+
+#avatar{
+	position: absolute;
+}
+#border-avatar{
+	margin: 45px 0 0 50px;
+    position: absolute;
+    width: 200px;
+}
+.box-avatar{
+	background-image: url("../img/user/camouflage.jpeg");
+	border: 2px solid;
+	border-radius: 40px 0 0 40px;
+    height: 240px;
+    padding: 20px;
+    width: 260px;
+}
+.banniere-avatar{
+	background-image: url("../img/user/camouflage2.jpeg");
+	border-radius: 40px;
+	margin-bottom: 20px;
+}
+.box-stat{
+	background-color: #100e08;
+	width:260px;
+	height: 240px;
+	border: 2px solid;
+	border-radius: 0 40px 40px 0;
+}
+.banniere-body{
+	display: inline;
+	width: 390px;
+}
+.banniere-body table.table.table-hover{
+	display: inline-table;
+    height: 230px;
+    margin-bottom: 0;
+    text-align: center;
+    width: 480px;
+}
+.box-stat-cat{
+	margin:-10px 10px;
+	height: 102px;
+}
+#sep.box-stat-cat{
+	margin-top:13px;
+	height: 0px;
+	border-bottom: 2px solid white;
+}
+
+.content{
+	width: 900px;
 	margin: auto;
 }
 
