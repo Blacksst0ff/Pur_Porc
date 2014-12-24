@@ -24,7 +24,7 @@
 							require_once('users/createAccount.html');
 							break;
 						case 'mon_compte':
-							require_once('users/index.html');
+							require_once('users/index.php');
 							break;
 						// PAGES / GENERALITE
 						case 'generalite':

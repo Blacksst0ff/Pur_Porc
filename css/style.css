@@ -268,7 +268,7 @@ div.content div.box h1{
 	height: 65px;
 }
 
-.panel-default{
+#create.panel.panel-default{
 	width: 600px;
 	margin-left: 100px;
 	display: inline-block;
