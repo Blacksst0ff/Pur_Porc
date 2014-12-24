@@ -328,6 +328,9 @@ html body div.box div.row div.allLegLink div.row div.col-sm-6.col-md-6 a div.thu
 .allLegLink div.row div.col-sm-6.col-md-6 a div.thumbnail div.caption {
     padding: 0 9px;
 }
+.allLegLink div.row div.col-sm-6.col-md-6 a div.thumbnail div.caption h3{
+	text-align: center;
+}
 
 #boxImg{
 	margin-left: 70px;
