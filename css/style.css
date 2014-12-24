@@ -321,6 +321,10 @@ div.box div.row div.article form div#artImg.imgReg.right{
 	display: inline-flex;
 }
 
+html body div.box div.row div.allLegLink div.row div.col-sm-6.col-md-6 a div.thumbnail:hover{
+	background-color: rgba(39, 40, 44, 0.2);
+}
+
 .allLegLink div.row div.col-sm-6.col-md-6 a div.thumbnail div.caption {
     padding: 0 9px;
 }
