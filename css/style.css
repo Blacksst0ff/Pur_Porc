@@ -316,6 +316,15 @@ div.box div.row div.article form div#artImg.imgReg.right{
 	margin-right: 80px;
 }
 
+.allLegLink{
+	width : 100%;
+	display: inline-flex;
+}
+
+.allLegLink div.row div.col-sm-6.col-md-6 a div.thumbnail div.caption {
+    padding: 0 9px;
+}
+
 #boxImg{
 	margin-left: 70px;
 }
@@ -323,3 +332,4 @@ div.box div.row div.article form div#artImg.imgReg.right{
 #pop-up-img{
 	margin-top: -120px;
 }
+
