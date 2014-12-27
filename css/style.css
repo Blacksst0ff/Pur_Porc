@@ -340,3 +340,9 @@ html body div.box div.row div.allLegLink div.row div.col-sm-6.col-md-6 a div.thu
 	margin-top: -120px;
 }
 
+html body.modal-open div.content div.tab-content div#home.tab-pane.fade.in.active div.row div.col-md-12 div.panel.panel-primary div.modal.fade.bs-example-modal-lg.in div.modal-dialog.modal-lg div.modal-content div.modal-body{ 
+height: 850px;}
+
+ div.panel.panel-primary div.panel-heading{
+	background-image: url("../img/user/camouflage.jpeg");
+}

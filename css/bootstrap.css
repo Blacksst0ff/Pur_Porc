@@ -2485,7 +2485,6 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
-  padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
 }
