@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 	  <meta charset="utf-8">
-	  <title>Pure Porc Home Page</title>
+	  <title>Pur Porc Home Page</title>
 	  <link rel="stylesheet" href="css/style.css">
 	  <link rel="stylesheet" href="css/bootstrap.css">
 	  <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -36,6 +36,31 @@
 						case 'reglement':
 							require_once('pages/generalite/reglement.html');
 							break;
+						// PAGES / PRESENTATION
+						case 'presentation':
+							require_once('pages/presentation/presentation.html');
+							break;
+						case 'membre':
+							require_once('pages/presentation/membre.html');
+							break;
+						case 'terrain':
+							require_once('pages/presentation/terrain.html');
+							break;
+						case 'tofTerrain':
+							require_once('pages/presentation/tofTerrain.html');
+							break;
+						case 'vidTerrain':
+							require_once('pages/presentation/vidTerrain.html');
+							break;
+						case 'amenTerrain':
+							require_once('pages/presentation/amenTerrain.html');
+							break;
+						case 'assoc':
+							require_once('pages/presentation/assoc.html');
+							break;
+						case 'assocPart':
+							require_once('pages/presentation/assocPart.html');
+							break;
 						// PAGES / TECHNIQUE
 						case 'coinTech':
 							require_once('pages/technique/coinTech.html');
@@ -61,7 +86,7 @@
 						case 'gears':
 							require_once('pages/technique/gears.html');
 							break;
-						
+						// DEFAULT
 						default:
 							require_once('content.html');
 							break;
