@@ -13,7 +13,19 @@
 	</head>
 		<body>
 			<?php
-				require_once('header.html');
+				if (isset($_GET["log"])) {
+					switch ($_GET["log"]) {
+						case '0':
+							require_once('header.html');
+							break;
+						
+						case '1':
+							require_once('header_user.html');
+							break;
+					}
+				}else{
+					require_once('header.html');
+				}
 				require_once('menu.html');
 				/* On test si le paramètre chap existe */
 				if (isset($_GET["chap"])) {

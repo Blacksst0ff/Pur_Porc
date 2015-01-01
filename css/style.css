@@ -45,23 +45,26 @@ body{
 }
 
 #avatar{
-	position: absolute;
+	height: 165px;
+    position: absolute;
+    width: 170px;
 }
 #border-avatar{
-	margin: 45px 0 0 50px;
+	margin: 75px 0 0 75px;
     position: absolute;
-    width: 200px;
+    width: 125px;
 }
 .box-avatar{
 	background-image: url("../img/user/camouflage.jpeg");
-	border: 2px solid;
-	border-radius: 40px 0 0 40px;
-    height: 240px;
-    padding: 20px;
-    width: 260px;
+    border: 2px solid;
+    border-radius: 20px;
+    height: 185px;
+    padding: 7px;
+    width: 190px;
+    margin-left: 12px;
 }
 .banniere-avatar{
-	background-image: url("../img/user/camouflage2.jpeg");
+	/*background-image: url("../img/user/camouflage2.jpeg");*/
 	border-radius: 40px;
 	margin-bottom: 20px;
 }
@@ -132,6 +135,9 @@ header div#login.right{
 
 header div#login.right p{
 	text-align: center;
+	color: white;
+	font-family: cursive;
+	font-weight: bold;
 }
 
 header div#login.right p a{
@@ -153,7 +159,7 @@ header div#box-login.right{
 	padding: 10px;
 }
 
-header div#box-login.right form button#btn-log.btn.btn-default{
+/*header div#box-login.right form button#btn-log.btn.btn-default*/ header div#box-login.right form a#btn-log.btn.btn-default{
 	margin-left: 60px;
 }
 

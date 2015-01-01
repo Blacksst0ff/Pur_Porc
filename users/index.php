@@ -6,7 +6,7 @@
 <div class="content">
 <?php
 // Bannière Mon compte
-require_once('banner.html');
+//require_once('banner.html');
 ?>
 
 <ul class="nav nav-tabs nav-justified" role="tablist" id="myTab">
