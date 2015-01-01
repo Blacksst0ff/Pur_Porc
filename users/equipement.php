@@ -5,7 +5,13 @@
   <div class="panel panel-primary">
   	<div class="panel-heading">
   	Gestion de mon Equipement  
+  	<?php
+  	if (isset($_GET["create"]) ) { ?>
+  		<button type="button" class="btn btn-warning right" data-toggle="modal" data-target=".bs-example2-modal-lg">Sauvegarder</button>
+  	<?php }else{
+  	?>
   	<button type="button" class="btn btn-warning right" data-toggle="modal" data-target=".bs-example-modal-lg">Créer une Classe</button>
+  	<?php } ?>
   	</div>
 	  <div class="panel-body">
 
@@ -17,9 +23,18 @@
 
 <?php 
 // Accueil
+if (isset($_GET["create"]) ) {
 
-switch ($_GET["create"]) {
-		case '1':
+
+	?>
+
+	<p>edition de la classe
+		</p>	
+
+
+	<?php
+	
+}else{
 			?>
 			  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
@@ -66,22 +81,14 @@ switch ($_GET["create"]) {
   </div>
 </div>
 
-			<?php
-			break;
-		
-		default:
-			
-			break;
+<?php
 	}
-
-
-
 ?>
 	
 	  	
 	  </div>
 
-		<!-- Model dde création d'une classe -->
+		<!-- Modal de création d'une classe -->
 
 		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
@@ -103,17 +110,37 @@ switch ($_GET["create"]) {
 	  </div>
 	</div>
 
+	<!-- Modal d'enregistrement de classe' -->
+	<div class="modal fade bs-example2-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Création de classe</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="jumbotron">
+			  <h2>Félicitation!</h2>
+			  <img src="img/Success.png" class="right" id="pop-up-img" width="150">
+			  <br/>
+			  <br/>
+			  <p>Classe enregistrée avec succés.
+			  </p>
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 
 
   </div>
 
   </div>
 </div>
-
-
-
-
-
 
 
 

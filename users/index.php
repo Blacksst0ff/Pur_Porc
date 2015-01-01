@@ -26,7 +26,7 @@
   <div role="tabpanel" class="tab-pane fade" id="equip">
   <?php
 	// page des equipements
-	require_once('equipement.html');
+	require_once('equipement.php');
 	?>
   </div>
   <div role="tabpanel" class="tab-pane fade" id="stat">
@@ -51,5 +51,13 @@ $('#myTab a').click(function (e) {
 })
 </script>
 
+<?php
+// si create est present afficher la section equipement 
+if(isset($_GET["create"])){
+?>
+	<script>
+		$('#myTab a[href="#equip"]').tab('show')
+	</script>
+<?php } ?>
 
 </div>
