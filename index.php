@@ -38,6 +38,9 @@
 						case 'mon_compte':
 							require_once('users/index.php');
 							break;
+						case 'logout':
+							require_once('users/logout.php');
+							break;
 						// PAGES / GENERALITE
 						case 'generalite':
 							require_once('pages/generalite/generalite.html');

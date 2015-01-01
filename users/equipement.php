@@ -124,7 +124,7 @@ if (isset($_GET["create"]) ) {
 			  <img src="img/Success.png" class="right" id="pop-up-img" width="150">
 			  <br/>
 			  <br/>
-			  <p>Classe enregistrée avec succés.
+			  <p>Classe enregistrée avec succès.
 			  </p>
 			</div>
 	      </div>
