@@ -116,6 +116,10 @@ header div.logo{
     border-radius: 80px;
     display: inline-block;
 }
+header div.logo:hover{
+	background-color: rgba(255, 255, 255, 0.16);
+}
+
 header div.annonce{
 
 }
@@ -165,6 +169,42 @@ header div#box-login.right{
 
 header div#box-login.right form div.form-group label{
 	color: white;
+}
+
+html body header div.plaque-user.right{
+	background-image: url("../img/user/bg-plaque.jpg");
+	background-size: 500px 260px;
+	margin-right: 290px;
+    margin-top: -230px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+}
+html body header div.plaque-user.right header img#rang{
+	position: absolute;
+}
+html body header div.plaque-user.right header h2#user{
+	color: white;
+    font-family: impact;
+    letter-spacing: 5px;
+    padding-bottom: 17px;
+    padding-left: 85px;
+    padding-top: 5px;
+}
+html body header div.plaque-user.right header div.progress{
+	margin-left: 80px;
+    margin-top: -25px;
+    width: 300px;
+}
+html body header div.plaque-user.right div.list-group{
+	width: 382px;
+}
+html body header div.plaque-user.right div.list-group a.list-group-item{
+	background-color: rgba(255,255,255,0.2);
+	color: white;
+}
+html body header div.plaque-user.right div.list-group a.list-group-item:hover{
+	background-color: rgba(255,255,255,0.3);
 }
 
 /******************
