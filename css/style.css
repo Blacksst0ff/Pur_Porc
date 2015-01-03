@@ -191,20 +191,35 @@ html body header div.plaque-user.right header h2#user{
     padding-left: 85px;
     padding-top: 5px;
 }
+html body header div.plaque-user.right header h2#user span{
+	font-size: 0.6em;
+    letter-spacing: 1px;
+}
 html body header div.plaque-user.right header div.progress{
 	margin-left: 80px;
     margin-top: -25px;
     width: 300px;
 }
-html body header div.plaque-user.right div.list-group{
-	width: 382px;
-}
 html body header div.plaque-user.right div.list-group a.list-group-item{
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.3);
 	color: white;
+	font-weight: bold;
+}
+html body header div.plaque-user.right div#user-footer.col-md-12{
+	 border-radius: 20px;
+    border-top: 2px solid white;
+    color: white;
+    font-size: large;
+    margin-top: 90px;
+    position: absolute;
+    text-align: center;
+    width: 480px;
+}
+html body header div.plaque-user.right div#user-footer.col-md-12:hover{
+	background-color: rgba(255,255,255,0.3);
 }
 html body header div.plaque-user.right div.list-group a.list-group-item:hover{
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(255,255,255,0.5);
 }
 
 /******************
