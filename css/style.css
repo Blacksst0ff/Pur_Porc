@@ -219,6 +219,28 @@ html body header div.plaque-user.right div.list-group a.list-group-item:hover{
 	background-color: rgba(255,255,255,0.5);
 }
 
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-12 table.table.table-bordered{
+	text-align: center;
+}
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-6 img#rang{
+	margin-top: -45px;
+}
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-6 div#progress-stats.progress{
+	width: 360px;
+}
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-6 p.rang-exp{
+	font-weight: bold;
+    margin-top: -19px;
+    text-align: center;
+    width: 360px;
+}
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-6 p.rang-lvl{
+	font-size: large;
+    font-weight: bold;
+    margin-top: -27px;
+    text-align: center;
+    width: 65px;
+}
 /******************
 /* FOOTER.HTML*****
 /*****************/
