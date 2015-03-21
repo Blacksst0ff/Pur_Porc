@@ -1,0 +1,463 @@
+body{
+	width: 1100px;
+	border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+.clear{
+	clear: both;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+.box{
+	background-image: url("../img/pa-box.png");
+    background-repeat: no-repeat;
+    background-size: 80px auto;
+    border-bottom: 2px solid;
+    border-radius: 20px;
+    border-right: 2px solid;
+    height: auto;
+    margin: auto;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+.box h1{
+	font-family: Comic Sans MS;
+    padding-left: 90px;
+    padding-top: 12px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 20px;
+    width: 750px;
+}
+
+.box div.row{
+	width: 90%;
+	margin: auto;
+}
+
+#avatar{
+	height: 165px;
+    position: absolute;
+    width: 170px;
+}
+#border-avatar{
+	margin: 75px 0 0 75px;
+    position: absolute;
+    width: 125px;
+}
+.box-avatar{
+	background-image: url("../img/user/camouflage.jpeg");
+    border: 2px solid;
+    border-radius: 20px;
+    height: 185px;
+    padding: 7px;
+    width: 190px;
+    margin-left: 12px;
+}
+.banniere-avatar{
+	/*background-image: url("../img/user/camouflage2.jpeg");*/
+	border-radius: 40px;
+	margin-bottom: 20px;
+}
+.box-stat{
+	background-color: #100e08;
+	width:260px;
+	height: 240px;
+	border: 2px solid;
+	border-radius: 0 40px 40px 0;
+}
+.banniere-body{
+	display: inline;
+	width: 390px;
+}
+.banniere-body table.table.table-hover{
+	display: inline-table;
+    height: 230px;
+    margin-bottom: 0;
+    text-align: center;
+    width: 480px;
+}
+.box-stat-cat{
+	margin:-10px 10px;
+	height: 102px;
+}
+#sep.box-stat-cat{
+	margin-top:13px;
+	height: 0px;
+	border-bottom: 2px solid white;
+}
+
+.content{
+	width: 900px;
+	margin: auto;
+}
+
+/******************
+/* HEADER.HTML*****
+/*****************/
+
+header{
+	background-color: #333 ;
+}
+
+header div.logo{
+	width: 250px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+    border-radius: 80px;
+    display: inline-block;
+}
+header div.logo:hover{
+	background-color: rgba(255, 255, 255, 0.16);
+}
+
+header div.annonce{
+
+}
+
+header div.annonce h1{
+
+}
+
+header div#login.right{
+	width: 250px;
+	height: 25px;
+	border-bottom: 2px solid white;
+	padding-top: 2px;
+	margin-right: 10px;
+	border-radius: 80px;
+}
+
+header div#login.right p{
+	text-align: center;
+	color: white;
+	font-family: cursive;
+	font-weight: bold;
+}
+
+header div#login.right p a{
+	text-decoration: none;
+}
+
+header div#login.right p a:hover{
+	color: white;
+
+}
+
+header div#box-login.right{
+	width: 235px;
+	margin-top: -215px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	border-radius: 30px;
+	margin-right: 15px;
+	padding: 10px;
+}
+
+/*header div#box-login.right form button#btn-log.btn.btn-default*/ header div#box-login.right form a#btn-log.btn.btn-default{
+	margin-left: 60px;
+}
+
+header div#box-login.right form div.form-group label{
+	color: white;
+}
+
+html body header div.plaque-user.right{
+	background-image: url("../img/user/bg-plaque.jpg");
+	background-size: 500px 260px;
+	margin-right: 290px;
+    margin-top: -230px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+}
+html body header div.plaque-user.right header img#rang{
+	position: absolute;
+}
+html body header div.plaque-user.right header h2#user{
+	color: white;
+    font-family: impact;
+    letter-spacing: 5px;
+    padding-bottom: 17px;
+    padding-left: 85px;
+    padding-top: 5px;
+}
+html body header div.plaque-user.right header h2#user span{
+	font-size: 0.6em;
+    letter-spacing: 1px;
+}
+html body header div.plaque-user.right header div.progress{
+	margin-left: 80px;
+    margin-top: -25px;
+    width: 300px;
+}
+html body header div.plaque-user.right div.list-group a.list-group-item{
+	background-color: rgba(255,255,255,0.3);
+	color: white;
+	font-weight: bold;
+}
+html body header div.plaque-user.right div#user-footer.col-md-12{
+	 border-radius: 20px;
+    border-top: 2px solid white;
+    color: white;
+    font-size: large;
+    margin-top: 90px;
+    position: absolute;
+    text-align: center;
+    width: 480px;
+}
+html body header div.plaque-user.right div.list-group a.list-group-item:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-12 table.table.table-bordered{
+	text-align: center;
+}
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-6 img#rang{
+	margin-top: -45px;
+}
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-6 div#progress-stats.progress{
+	width: 360px;
+}
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-6 p.rang-exp{
+	font-weight: bold;
+    margin-top: -19px;
+    text-align: center;
+    width: 360px;
+}
+html body div.content div.tab-content div#stat.tab-pane.fade.active.in div.row div.col-md-12 div.panel.panel-primary div.panel-body div.col-md-6 p.rang-lvl{
+	font-size: large;
+    font-weight: bold;
+    margin-top: -27px;
+    text-align: center;
+    width: 65px;
+}
+/******************
+/* FOOTER.HTML*****
+/*****************/
+
+footer{
+	background-image: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
+}
+
+#footer-header{
+	color: white;
+}
+
+#comLog {
+  width: 200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.leftfooter {
+	float: left;
+    width: 350px;
+	margin-left: 30px;
+    margin-top: 15px;
+}
+
+.midfooter {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 350px;
+}
+
+.rightfooter {
+	float: right;
+    width: 350px;
+	padding-left: 120px;
+	margin-top: -190px;
+}
+
+.logo { 
+	margin-left: auto;
+    margin-right: auto;
+    width: 10em
+}
+
+.comLogo { 
+	display: inline-flex;
+	margin-left: 25px;
+}
+
+.FB-Logo { 
+	margin-left: auto;
+    margin-right: auto;
+    width: 6em
+}
+
+.T-Logo { 
+	margin-left: 78px;
+    margin-top: -75px;
+	margin-top: 0px;
+    width: 6em
+}
+
+.Y-Logo { 
+    margin-left: 150px;
+	margin-top: -70px;
+    width: 6em
+}
+
+/******************
+/* CONTENT.HTML*****
+/*****************/
+
+div.content{
+	width: 1000px;
+	margin: auto;
+}
+
+div.content div.box{
+    background-image: url("../img/pa-box.png");
+    background-repeat: no-repeat;
+    background-size: 80px auto;
+    border-bottom: 2px solid;
+    border-radius: 20px;
+    border-right: 2px solid;
+    height: 400px;
+    margin: auto;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+div.content div.box h1{
+	font-family: Comic Sans MS;
+    padding-left: 90px;
+    padding-top: 12px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 20px;
+    width: 500px;
+
+}
+
+.box h1{
+	height: 65px;
+}
+
+#create.panel.panel-default{
+	width: 600px;
+	margin-left: 100px;
+	display: inline-block;
+}
+
+.panel-heading{
+	font-size: 1.6em;
+}
+
+.list-group .list-group-item{
+	padding-left: 30px;
+}
+
+img#logo-approved.right{
+	margin-right: 90px;
+    margin-top: 35px;
+}
+
+.box div.row div.col-md-6 form div#radio-box{
+	height: 44px;
+}
+.box div.row div.col-md-6 form div#radio-box p{
+	margin-top: 30px;
+}
+
+.preambule{
+	width: 100%;
+}
+
+div.box div.row div.article form div#art.form-group{
+	width: 70%;
+}
+
+div.box div.row div.article form div#artImg.imgReg.right{
+	margin-right: 10px;
+    margin-top: -115px;
+}
+
+#mecDet{
+	margin-left: 50px;
+}
+
+#gearImg{
+	margin-top: -70px;
+	margin-right: 80px;
+}
+
+.allLegLink{
+	width : 100%;
+	display: inline-flex;
+}
+
+html body div.box div.row div.allLegLink div.row div.col-sm-6.col-md-6 a div.thumbnail:hover{
+	background-color: rgba(39, 40, 44, 0.2);
+}
+
+.allLegLink div.row div.col-sm-6.col-md-6 a div.thumbnail div.caption {
+    padding: 0 9px;
+}
+.allLegLink div.row div.col-sm-6.col-md-6 a div.thumbnail div.caption h3{
+	text-align: center;
+}
+
+#boxImg{
+	margin-left: 70px;
+}
+
+#tabl {
+border: medium solid #6495ed;
+border-collapse: collapse;
+width: 115%;
+height: 275px;
+}
+#thF {
+font-family: monospace;
+border: thin solid #6495ed;
+width: 50%;
+padding: 5px;
+background-color: #D0E3FA;
+}
+#tdF {
+font-family: sans-serif;
+border: thin solid #6495ed;
+width: 50%;
+padding: 5px;
+text-align: center;
+background-color: #ffffff;
+
+
+}
+#pop-up-img{
+	margin-top: -120px;
+}
+#pop-up-img-logout{
+	margin-right: 250px;
+    margin-top: -50px;
+}
+#indent{
+	margin-left: 20px;
+}
+#pecor {
+	display: inline-flex;
+    width: 100%;
+
+
+}
+html body.modal-open div.content div.tab-content div#home.tab-pane.fade.in.active div.row div.col-md-12 div.panel.panel-primary div.modal.fade.bs-example-modal-lg.in div.modal-dialog.modal-lg div.modal-content div.modal-body{ 
+height: 850px;}
+
+ div.panel.panel-primary div.panel-heading{
+	background-image: url("../img/user/camouflage.jpeg");
+}

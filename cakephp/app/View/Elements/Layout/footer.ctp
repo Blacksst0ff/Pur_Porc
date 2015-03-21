@@ -1,0 +1,50 @@
+<footer>
+	<div class="leftfooter">
+	
+		<h4 id='footer-header'> LENS UTILES </h4>
+		
+		<div class="lien" style="padding: 0 0 0 0px">
+			<a href="index.php?chap=legislationFrancaise"> Legislation Française </a></br>
+			<a href="index.php?chap=reglement"> Règlement sur le forum/Association </a></br>
+			<a href="#"> Partenaire </a></br>
+			<a href="#"> FAQ </a>
+		</div>
+	</div> 
+	
+	<div class="midfooter">
+		<div class="logo">
+			<a href="index.php">
+				<img src="img/ljeb.gif" alt="logo" width="150">
+			</a>
+		</div>
+		<div class="comLogo">
+			<ul div="comLog">
+			
+				<li>
+					<a href="#" title="facebook"><img src="img/logo/facebook-logo.jpg" alt="facebook" width="50"/></a>
+				</li>
+			</ul>
+	<ul div="comLog">
+				<li>
+					<a href="#"><img src="img/logo/twitter-logo.png" alt="twitter" width="50"/></a>
+				</li>
+			</ul>
+			<ul div="comLog">
+				<li>
+					<a href="https://www.youtube.com/user/bin59710/videos"><img src="img/logo/youtube-logo.png" alt="youtube" width="50"/></a>
+				</li>
+			
+			</ul>
+		</div>
+	</div>
+
+	<div class="rightfooter">
+		<h4 id="footer-header"> SITEMAP </h4>
+		
+		<div class="map" style="padding: 0 0 0 0px">
+			<a href="index.php?chap=terrain"> Notre terrain </a></br>
+			<a href="#"> Présentation de l'association </a></br>
+			<a href="http://airsoft-team-purporc.goodforum.net/"> Notre forum </a>
+		</div>
+	</div>
+</footer>
