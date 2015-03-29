@@ -1,13 +1,23 @@
 <header>
 	<div class="logo">
-		<a href="index.php">
-			<img src="img/ljeb.gif" alt="logo" width="250">
-		</a>
+		<?php
+			echo $this->Html->image("ljeb.gif", array(
+			    "alt" => "logo",
+			    "width" => "250",
+			    'url' => "/"
+			));
+		?>
 	</div>
 	
 	<div class="right" id="login">
 		<p> 
-			<a href="index.php?chap=createAccount">S'enregistrer</a> / <a href="#" onclick="javascript:hideshow(document.getElementById('box-login'))">Se Connecter</a>
+			<?php
+				echo $this->Html->link(
+									    'S\'enregistrer',
+									    '/creer_compte'
+									);
+			?>
+			/ <a href="#" onclick="javascript:hideshow(document.getElementById('box-login'))">Se Connecter</a>
 		<p>
 	</div>
 	<div class="clear"> </div>	

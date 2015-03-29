@@ -1,0 +1,147 @@
+<ol class="breadcrumb">
+  <li>
+  		<?php
+  			echo $this->Html->link(
+									    'Home',
+									    '/'
+									);
+  		?>
+  </li>
+  <li class="active">Création de compte</li>
+</ol>
+
+<div class="panel panel-default" id="create">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Deviens Membre</div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item">Tu aurais voulu naître avec une réplique dans les mains ?</li>
+    <li class="list-group-item">Dans la semaine tu penses déjà à tes expéditions du week end.</li>
+    <li class="list-group-item">Toi aussi tu veux tater de la gachette plutôt qu'un joystick</li>
+  </ul>
+
+  <div class="panel-heading">Rejoins nous !</div>
+</div>
+
+<?php
+	echo $this->Html->image("pur_porc_approuved.png", array(
+	    "alt" => "Approuvé par les Pur Porc",
+	    "width" => "170",
+	    "class" => "right",
+	    "id" => "logo-approved"
+	));
+?>
+
+<!-- Content Create Account -->			
+<div class="box">
+	<h1 class="box-title">Création de compte</h1>
+	<div class="row">
+	  <div class="col-md-6">
+	  	<?php
+	  		echo $this->Form->create('User');
+	  	?>
+	  	<form role="form">	  		
+	  	  <div class="form-group">
+		    <label for="InputPseudo">Pseudo</label>
+		    <input type="text" class="form-control" id="InputPseudo" placeholder="Entrer pseudo">
+		  </div>
+		  <div class="form-group">
+		    <label for="InputNom">Nom</label>
+		    <input type="text" class="form-control" id="InputNom" placeholder="Entrer Nom">
+		  </div>
+		  <div class="form-group">
+		    <label for="InputBirth">Date de naissance</label>
+		    <input type="date" class="form-control" id="InputBirth" placeholder="Exemple: 12/12/1993">
+		  </div>
+		  <div class="form-group">
+		    <label for="InputEmail">Email</label>
+		    <input type="email" class="form-control" id="InputEmail" placeholder="Entrer email">
+		  </div>
+		  <div class="form-group">
+		    <label for="InputPassword">Password</label>
+		    <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+		  </div>
+		</form>
+	  </div>
+	  <div class="col-md-6">
+	    <form role="form">
+	    	<div id="radio-box">
+	    	<p>
+	      	<label class="radio-inline">
+			  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="F"> Airsofteuse
+			</label>
+			<label class="radio-inline">
+			  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="M"> Airsofteur
+			</label>
+			</p>
+			</div>
+		  <div class="form-group">
+		    <label for="InputPrenom">Prenom</label>
+		    <input type="text" class="form-control" id="InputPrenom" placeholder="Entrer Prenom">
+		  </div>
+		  <div class="form-group">
+		    <label for="InputVille">Ville</label>
+		    <input type="text" class="form-control" id="InputVille" placeholder="Entrer Ville">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Confirme Email</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Confirme Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		  <!-- Button trigger modal -->
+		  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  			Submit
+		  </button>
+
+		  <!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Création de compte</h4>
+			      </div>
+			      <div class="modal-body">
+			        <div class="jumbotron">
+					  <h2>Félicitation!</h2>
+					  <img src="img/Success.png" class="right" id="pop-up-img" width="150">
+					  <br/>
+					  <br/>
+					  <p>La demande de création de votre compte à bien été enregistrée. <br/><br/>
+					  	Vous allez recevevoir un email à l'adresse : <em>pure_porc@gmail.com</em> <br/>
+					  	Afin de valider vos informations.<br/><br/>
+					  	Merci de votre adhésion et bonne visite sur le site.
+					  </p>
+					</div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+
+		</form>
+		<?php echo $this->Form->end(); ?>
+	  	
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+</div>
+<!-- End -->
+
+			
+
