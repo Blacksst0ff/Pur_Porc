@@ -84,7 +84,16 @@ class UsersController extends AppController {
     }
 
     public function create_account(){
-
+        if ($this->request->is('post')) {
+            var_dump($this->request->data);
+            $this->User->create();
+            if ($this->User->save($this->request->data)) {
+                $this->Session->setFlash(__('L\'user a été sauvegardé'));
+                return $this->redirect('/'));
+            } else {
+                $this->Session->setFlash(__('L\'user n\'a pas été sauvegardé. Merci de réessayer.'));
+            }
+        }
     }
 
 }

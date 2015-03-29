@@ -37,10 +37,10 @@
 <div class="box">
 	<h1 class="box-title">Création de compte</h1>
 	<div class="row">
-	  <div class="col-md-6">
-	  	<?php
+		<?php
 	  		echo $this->Form->create('User', array('action' => 'create_account'));
 	  	?>
+	  <div class="col-md-6">
 	  	  <?php	 
 	  	  	echo $this->Form->input('User.pseudo', array(
 			    	'class' => 'form-control',
@@ -59,7 +59,7 @@
 	  	  	echo $this->Form->input('User.birthday', array(
 			    	'class' => 'form-control',
 			    	'type' =>'texte',
-			    	'placeholder' => 'jj/dd/yyyy',
+			    	'placeholder' => 'jj-dd-yyyy',
 			    'div' => array(
 			        'class' => 'form-group'
 			 		)
@@ -71,7 +71,7 @@
 			        'class' => 'form-group'
 			 		)
 	  	  	));	
-	  	  	echo $this->Form->input('User.0.password', array(
+	  	  	echo $this->Form->input('User.password', array(
 			    	'class' => 'form-control',
 			    	'placeholder' => 'P*******',
 			    'div' => array(
@@ -105,7 +105,7 @@
 				        'class' => 'form-group'
 				 		)
 		  	  	));
-				echo $this->Form->input('User.email', array(
+				echo $this->Form->input('User.emailRP', array(
 				    	'class' => 'form-control',
 				    	'label' => 'Confirme Email',
 				    	'placeholder' => 'Entrer un email',
@@ -113,9 +113,10 @@
 				        'class' => 'form-group'
 				 		)
 		  	  	));	
-				echo $this->Form->input('User.1.password', array(
+				echo $this->Form->input('User.passwordRP', array(
 				    	'class' => 'form-control',
 				    	'label' => 'Confirme Password',
+				    	'type' => 'password',
 				    	'placeholder' => 'P*******',
 				    'div' => array(
 				        'class' => 'form-group'
