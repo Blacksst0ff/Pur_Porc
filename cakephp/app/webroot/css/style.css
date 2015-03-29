@@ -367,10 +367,8 @@ img#logo-approved.right{
     margin-top: 35px;
 }
 
-.box div.row div.col-md-6 form div#radio-box{
+.box div.row div.col-md-6 div#radio-box{
 	height: 44px;
-}
-.box div.row div.col-md-6 form div#radio-box p{
 	margin-top: 30px;
 }
 

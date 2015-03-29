@@ -39,64 +39,94 @@
 	<div class="row">
 	  <div class="col-md-6">
 	  	<?php
-	  		echo $this->Form->create('User');
+	  		echo $this->Form->create('User', array('action' => 'create_account'));
 	  	?>
-	  	<form role="form">	  		
-	  	  <div class="form-group">
-		    <label for="InputPseudo">Pseudo</label>
-		    <input type="text" class="form-control" id="InputPseudo" placeholder="Entrer pseudo">
-		  </div>
-		  <div class="form-group">
-		    <label for="InputNom">Nom</label>
-		    <input type="text" class="form-control" id="InputNom" placeholder="Entrer Nom">
-		  </div>
-		  <div class="form-group">
-		    <label for="InputBirth">Date de naissance</label>
-		    <input type="date" class="form-control" id="InputBirth" placeholder="Exemple: 12/12/1993">
-		  </div>
-		  <div class="form-group">
-		    <label for="InputEmail">Email</label>
-		    <input type="email" class="form-control" id="InputEmail" placeholder="Entrer email">
-		  </div>
-		  <div class="form-group">
-		    <label for="InputPassword">Password</label>
-		    <input type="password" class="form-control" id="InputPassword" placeholder="Password">
-		  </div>
-		</form>
+	  	  <?php	 
+	  	  	echo $this->Form->input('User.pseudo', array(
+			    	'class' => 'form-control',
+			    	'placeholder' => 'Entrer Pseudo',
+			    'div' => array(
+			        'class' => 'form-group'
+			 		)
+	  	  	));	
+	  	  	echo $this->Form->input('User.nom', array(
+			    	'class' => 'form-control',
+			    	'placeholder' => 'Entrer Nom',
+			    'div' => array(
+			        'class' => 'form-group'
+			 		)
+	  	  	));	
+	  	  	echo $this->Form->input('User.birthday', array(
+			    	'class' => 'form-control',
+			    	'type' =>'texte',
+			    	'placeholder' => 'jj/dd/yyyy',
+			    'div' => array(
+			        'class' => 'form-group'
+			 		)
+	  	  	));	
+	  	  	echo $this->Form->input('User.email', array(
+			    	'class' => 'form-control',
+			    	'placeholder' => 'Entrer un email',
+			    'div' => array(
+			        'class' => 'form-group'
+			 		)
+	  	  	));	
+	  	  	echo $this->Form->input('User.0.password', array(
+			    	'class' => 'form-control',
+			    	'placeholder' => 'P*******',
+			    'div' => array(
+			        'class' => 'form-group'
+			 		)
+	  	  	));	
+	  	  
+		  ?>
 	  </div>
 	  <div class="col-md-6">
-	    <form role="form">
 	    	<div id="radio-box">
-	    	<p>
-	      	<label class="radio-inline">
-			  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="F"> Airsofteuse
-			</label>
-			<label class="radio-inline">
-			  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="M"> Airsofteur
-			</label>
-			</p>
+	    		<?php
+		    		$options = array('H' => 'Airsofteur', 'F' => 'Airsofteuse');
+					$attributes = array('legend' => false, 'separator' => '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+					echo $this->Form->radio('genre', $options, $attributes);
+				?>
 			</div>
-		  <div class="form-group">
-		    <label for="InputPrenom">Prenom</label>
-		    <input type="text" class="form-control" id="InputPrenom" placeholder="Entrer Prenom">
-		  </div>
-		  <div class="form-group">
-		    <label for="InputVille">Ville</label>
-		    <input type="text" class="form-control" id="InputVille" placeholder="Entrer Ville">
-		  </div>
-		  <div class="form-group">
-		    <label for="exampleInputEmail1">Confirme Email</label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-		  </div>
-		  <div class="form-group">
-		    <label for="exampleInputPassword1">Confirme Password</label>
-		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-		  </div>
-		  <!-- Button trigger modal -->
+
+			<?php
+				echo $this->Form->input('User.prenom', array(
+				    	'class' => 'form-control',
+				    	'placeholder' => 'Entrer Prenom',
+				    'div' => array(
+				        'class' => 'form-group'
+				 		)
+		  	  	));
+				echo $this->Form->input('User.ville', array(
+				    	'class' => 'form-control',
+				    	'placeholder' => 'Entrer Ville',
+				    'div' => array(
+				        'class' => 'form-group'
+				 		)
+		  	  	));
+				echo $this->Form->input('User.email', array(
+				    	'class' => 'form-control',
+				    	'label' => 'Confirme Email',
+				    	'placeholder' => 'Entrer un email',
+				    'div' => array(
+				        'class' => 'form-group'
+				 		)
+		  	  	));	
+				echo $this->Form->input('User.1.password', array(
+				    	'class' => 'form-control',
+				    	'label' => 'Confirme Password',
+				    	'placeholder' => 'P*******',
+				    'div' => array(
+				        'class' => 'form-group'
+				 		)
+		  	  	));	
+			?>
+		  <!-- Button trigger modal 
 		  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   			Submit
-		  </button>
-
+		  </button>-->
+			
 		  <!-- Modal -->
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
@@ -126,8 +156,15 @@
 			</div>
 
 
-		</form>
-		<?php echo $this->Form->end(); ?>
+		
+		<?php 
+			$options = array(
+			    'label' => 'Confirmer',
+			    'class' => 'btn btn-primary btn-lg',
+			    'style' => 'margin-bottom:15px;'
+			);
+			echo $this->Form->end($options); 
+		?>
 	  	
 	  </div>
 	</div>
