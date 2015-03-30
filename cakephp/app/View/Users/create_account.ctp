@@ -44,6 +44,7 @@
 	  	  <?php	 
 	  	  	echo $this->Form->input('User.pseudo', array(
 			    	'class' => 'form-control',
+			    	'type' =>'text',
 			    	'placeholder' => 'Entrer Pseudo',
 			    'div' => array(
 			        'class' => 'form-group'
@@ -51,6 +52,7 @@
 	  	  	));	
 	  	  	echo $this->Form->input('User.nom', array(
 			    	'class' => 'form-control',
+			    	'type' =>'text',
 			    	'placeholder' => 'Entrer Nom',
 			    'div' => array(
 			        'class' => 'form-group'
@@ -58,14 +60,18 @@
 	  	  	));	
 	  	  	echo $this->Form->input('User.birthday', array(
 			    	'class' => 'form-control',
-			    	'type' =>'texte',
-			    	'placeholder' => 'jj-dd-yyyy',
+			    	'type' =>'date',
+			    	'dateFormat' => 'DMY',
+			    	'separator' => ' ',
+			    	'minYear' => date('Y') - 70,
+    				'maxYear' => date('Y') - 18,
 			    'div' => array(
 			        'class' => 'form-group'
 			 		)
 	  	  	));	
 	  	  	echo $this->Form->input('User.email', array(
 			    	'class' => 'form-control',
+			    	'type' => 'email',
 			    	'placeholder' => 'Entrer un email',
 			    'div' => array(
 			        'class' => 'form-group'
@@ -73,6 +79,7 @@
 	  	  	));	
 	  	  	echo $this->Form->input('User.password', array(
 			    	'class' => 'form-control',
+			    	'type' => 'password',
 			    	'placeholder' => 'P*******',
 			    'div' => array(
 			        'class' => 'form-group'
@@ -93,6 +100,7 @@
 			<?php
 				echo $this->Form->input('User.prenom', array(
 				    	'class' => 'form-control',
+				    	'type' => 'text',
 				    	'placeholder' => 'Entrer Prenom',
 				    'div' => array(
 				        'class' => 'form-group'
@@ -100,6 +108,7 @@
 		  	  	));
 				echo $this->Form->input('User.ville', array(
 				    	'class' => 'form-control',
+				    	'type' => 'text',
 				    	'placeholder' => 'Entrer Ville',
 				    'div' => array(
 				        'class' => 'form-group'
@@ -108,6 +117,7 @@
 				echo $this->Form->input('User.emailRP', array(
 				    	'class' => 'form-control',
 				    	'label' => 'Confirme Email',
+				    	'type' => 'email',
 				    	'placeholder' => 'Entrer un email',
 				    'div' => array(
 				        'class' => 'form-group'

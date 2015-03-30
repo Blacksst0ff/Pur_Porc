@@ -76,6 +76,9 @@
  */
 	Configure::write('App.encoding', 'UTF-8');
 
+
+	Configure::write('Config.language', 'fra');
+
 /**
  * To configure CakePHP *not* to use mod_rewrite and to
  * use CakePHP pretty URLs, remove these .htaccess

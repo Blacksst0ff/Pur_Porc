@@ -1,5 +1,6 @@
 <?php
 App::uses('AppModel', 'Model');
+App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 /**
  * User Model
  *
@@ -12,6 +13,11 @@ class User extends AppModel {
  * @var mixed False or table name
  */
 	public $useTable = '_users';
+
+
+
+
+
 
 /**
  * Validation rules
@@ -149,7 +155,7 @@ class User extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'birthday' => array(
+		'birthday.full' => array(
 			'datetime' => array(
 				'rule' => array('date', 'dmy'),
 				//'message' => 'Your custom message here',
@@ -168,6 +174,16 @@ public function validate_passwords() {
 public function validate_emails() {
     return $this->data[$this->alias]['email'] === $this->data[$this->alias]['emailRT'];
 }
+
+public function beforeSave($options = array()) {
+        if (!empty($this->data[$this->alias]['password'])) {
+            $passwordHasher = new SimplePasswordHasher(array('hashType' => 'sha256'));
+            $this->data[$this->alias]['password'] = $passwordHasher->hash(
+                $this->data[$this->alias]['password']
+            );
+        }
+        return true;
+    }
 
 
 }

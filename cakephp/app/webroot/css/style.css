@@ -163,7 +163,7 @@ header div#box-login.right{
 	padding: 10px;
 }
 
-/*header div#box-login.right form button#btn-log.btn.btn-default*/ header div#box-login.right form a#btn-log.btn.btn-default{
+html body div#container div#header header div#box-login.right form#UserDisplayForm div.submit input#headlog.btn.btn-default{
 	margin-left: 60px;
 }
 
@@ -371,6 +371,30 @@ img#logo-approved.right{
 	height: 44px;
 	margin-top: 30px;
 }
+
+/**
+*	Date Birthday Input
+*/
+
+html body div#container div#content div.box div.row form#UserCreateAccountForm div.col-md-6 div.form-group label {
+    display: block;
+}
+
+html body div#container div#content div.box div.row form#UserCreateAccountForm div.col-md-6 div.form-group select#UserBirthdayMonth.form-control {
+    display: inline;
+    width: 46%;
+}
+
+html body div#container div#content div.box div.row form#UserCreateAccountForm div.col-md-6 div.form-group select#UserBirthdayDay.form-control {
+    display: inline-block;
+    width: 25%;
+}
+
+html body div#container div#content div.box div.row form#UserCreateAccountForm div.col-md-6 div.form-group select#UserBirthdayYear.form-control {
+    display: inline;
+    width: 26%;
+}
+/**/
 
 .preambule{
 	width: 100%;

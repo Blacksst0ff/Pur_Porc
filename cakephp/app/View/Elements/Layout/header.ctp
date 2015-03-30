@@ -23,18 +23,31 @@
 	<div class="clear"> </div>	
 	<div class="right" id="box-login" style="display:none;">
 		<!-- Partie Non Connecté (Pop up de connexion) -->
-		<form role="form">
-			  <div class="form-group">
-			    <label for="InputEmail">Email</label>
-			    <input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
-			  </div>
-			  <div class="form-group">
-			    <label for="InputPassword">Mot de passe</label>
-			    <input type="password" class="form-control" id="InputPassword" placeholder="P********">
-	  		  </div>
-			<!--<button type="submit" class="btn btn-default" id="btn-log">Connexion</button>-->
-			<a class="btn btn-default" id="btn-log" href="index.php?log=1&chap=mon_compte" role="button">Connexion</a>
-		</form>
+		<?php echo $this->Form->create('User', array('controler' =>'user', 'action'=>'login')); 	 
+		  	  	echo $this->Form->input('email', array(
+				    	'class' => 'form-control',
+				    	'type' => 'email',
+				    	'placeholder' => 'Entrer un email',
+				    'div' => array(
+				        'class' => 'form-group'
+				 		)
+		  	  	));	
+		  	  	echo $this->Form->input('User.password', array(
+				    	'class' => 'form-control',
+				    	'type' => 'password',
+				    	'placeholder' => 'P*******',
+				    'div' => array(
+				        'class' => 'form-group'
+				 		)
+		  	  	));		
+
+		  	  	$options = array(
+				    'label' => 'Connexion',
+				    'class' => 'btn btn-default',
+				    'id' => 'headlog'
+				);
+				echo $this->Form->end($options); 
+		?>
 
 	</div>
 

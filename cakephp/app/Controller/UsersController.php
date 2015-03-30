@@ -1,22 +1,39 @@
 <?php
+App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 // app/Controller/UsersController.php
 class UsersController extends AppController {
 
-    /*public function beforeFilter() {
+
+    public $components = array(
+            'Session',
+            'Auth' => array(
+                'authenticate' => array(
+                    'Form' => array(
+                        'fields' => array('username'=> 'email'),
+                        'passwordHasher' => array(
+                            'className' => 'Simple',
+                            'hashType' => 'sha256'
+                        )
+                    )
+                )
+            )
+        );
+
+    public function beforeFilter() {
 	    parent::beforeFilter();
 	    // Permet aux utilisateurs de s'enregistrer et de se déconnecter
-	    $this->Auth->allow('add', 'logout');
-	}*/
+	    $this->Auth->allow('create_account', 'logout');
+	}
 
 	public function login() {
-	    if ($this->request->is('post')) {
-	        if ($this->Auth->login()) {
-	            return $this->redirect($this->Auth->redirectUrl());
-	        } else {
-	            $this->Session->setFlash(__("Nom d'user ou mot de passe invalide, réessayer"));
-	        }
-	    }
-	}
+        if ($this->request->is('post')) {
+            if ($this->Auth->login()) {
+                return $this->redirect($this->Auth->redirectUrl());
+            } else {
+                $this->Session->setFlash(__("Nom d'user ou mot de passe invalide, réessayer"));
+            }
+        }
+    }
 
 	public function logout() {
 	    return $this->redirect($this->Auth->logout());
@@ -85,11 +102,12 @@ class UsersController extends AppController {
 
     public function create_account(){
         if ($this->request->is('post')) {
+            $this->request->data['birthday']["full"] = $this->request->data['birthday']["day"] ."-".$this->request->data['birthday']["month"] ."-".$this->request->data['birthday']["year"];
             var_dump($this->request->data);
             $this->User->create();
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash(__('L\'user a été sauvegardé'));
-                return $this->redirect('/'));
+                return $this->redirect('/');
             } else {
                 $this->Session->setFlash(__('L\'user n\'a pas été sauvegardé. Merci de réessayer.'));
             }
