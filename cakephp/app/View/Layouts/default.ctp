@@ -37,9 +37,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('bootstrap');
 
 		echo $this->Html->script('bootstrap');
-		echo $this->Html->script('bootstrap-min');
 		echo $this->Html->script('npm');
 		echo $this->Html->script('script');
+		echo $this->Html->script('http://code.jquery.com/jquery-1.9.1.js');
+
 
 
 		echo $this->fetch('meta');
