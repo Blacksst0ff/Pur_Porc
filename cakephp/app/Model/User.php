@@ -15,10 +15,6 @@ class User extends AppModel {
 	public $useTable = '_users';
 
 
-
-
-
-
 /**
  * Validation rules
  *
@@ -185,6 +181,14 @@ public function beforeSave($options = array()) {
         return true;
     }
 
+/*public function beforeSave($options = array())
+    {
+        if (isset($this->data[$this->alias]['password'])) {
+            $this->data[$this->alias]['password'] = Security::hash($this->data[$this->alias]['password'],null,true);
+        }
+        return true;
+    }
+*/
 
 }
 

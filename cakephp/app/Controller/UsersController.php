@@ -1,23 +1,7 @@
 <?php
-App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 // app/Controller/UsersController.php
 class UsersController extends AppController {
 
-
-    public $components = array(
-            'Session',
-            'Auth' => array(
-                'authenticate' => array(
-                    'Form' => array(
-                        'fields' => array('username'=> 'email'),
-                        'passwordHasher' => array(
-                            'className' => 'Simple',
-                            'hashType' => 'sha256'
-                        )
-                    )
-                )
-            )
-        );
 
     public function beforeFilter() {
 	    parent::beforeFilter();
@@ -27,6 +11,13 @@ class UsersController extends AppController {
 
 	public function login() {
         if ($this->request->is('post')) {
+            var_dump($this->request->data);
+           var_dump($this->Auth->login());
+
+
+
+
+
             if ($this->Auth->login()) {
                 return $this->redirect($this->Auth->redirectUrl());
             } else {

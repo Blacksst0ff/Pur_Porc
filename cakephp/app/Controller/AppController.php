@@ -11,7 +11,7 @@
  */
 
 App::uses('Controller', 'Controller');
-
+App::uses('SimplePasswordHasher', 'Component/Auth');
 /**
  * Application Controller
  *
@@ -24,19 +24,32 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 		public $components = array(
-			'Session',
-		    'Auth' => array(
+			    'Auth' => array(
+			    	'loginAction' => array(
+	                'controller' => 'users',
+	                'action' => 'login',
+	                'admin' => false,
+	                'customer' => false
+	            ),
 		        'authenticate' => array(
 		            'Form' => array(
 		            	'fields' => array('username'=> 'email'),
-		                'passwordHasher' => array(
-		                    'className' => 'SimplePasswordHasher',
+		            	'passwordHasher' => array(
+		                    'className' => 'Simple',
 		                    'hashType' => 'sha256'
 		                )
 		            )
 		        )
-		    )
+		    ),
+		    'Session'
 		);
+
+	    public function beforeFilter() {
+	        if (!isset($this->request->params['prefix']))
+	            $this->Auth->allow();
+	        if (isset($this->request->params['prefix']) && $this->request->params['prefix'] == 'admin')
+	            $this->layout = 'admin';
+	    }
 
 
 }
