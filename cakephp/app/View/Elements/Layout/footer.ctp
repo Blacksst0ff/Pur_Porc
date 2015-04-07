@@ -14,24 +14,32 @@
 	<div class="midfooter">
 		<div class="logo">
 			<a href="index.php">
-				<img src="img/ljeb.gif" alt="logo" width="150">
+				<?php
+		        echo $this->Html->image('ljeb.gif', array('alt' => 'logo', 'width' => '150', 'url' => "/"));
+		        ?>
 			</a>
 		</div>
 		<div class="comLogo">
 			<ul div="comLog">
 			
 				<li>
-					<a href="#" title="facebook"><img src="img/logo/facebook-logo.jpg" alt="facebook" width="50"/></a>
-				</li>
-			</ul>
-	<ul div="comLog">
-				<li>
-					<a href="#"><img src="img/logo/twitter-logo.png" alt="twitter" width="50"/></a>
+					<?php
+			        echo $this->Html->link($this->Html->image('logo/facebook-logo.jpg', array('alt' => 'facebook des Pur Porc', 'width' => '50')),'https://www.facebook.com/groups/613571285378537/', array('target'=>'_blank', 'escape'=>false));
+			        ?>
 				</li>
 			</ul>
 			<ul div="comLog">
 				<li>
-					<a href="https://www.youtube.com/user/bin59710/videos"><img src="img/logo/youtube-logo.png" alt="youtube" width="50"/></a>
+					<?php
+			        echo $this->Html->image('logo/twitter-logo.png', array('alt' => 'Twitter des Pur Porc', 'width' => '50', 'url' => "#"));
+			        ?>
+				</li>
+			</ul>
+			<ul div="comLog">
+				<li>
+					<?php
+					echo $this->Html->link($this->Html->image('logo/youtube-logo.png', array('alt' => 'Youtube des Pur Porc', 'width' => '50')),'https://www.youtube.com/user/bin59710/videos', array('target'=>'_blank', 'escape'=>false));
+			        ?>
 				</li>
 			
 			</ul>

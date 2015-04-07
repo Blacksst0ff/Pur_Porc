@@ -31,6 +31,12 @@ class AppController extends Controller {
 	                'admin' => false,
 	                'customer' => false
 	            ),
+			    'logoutRedirect' => array(
+	                'controller' => 'pages',
+	                'action' => 'diplay', 'home',
+	                'admin' => false,
+	                'customer' => false
+	            ),
 		        'authenticate' => array(
 		            'Form' => array(
 		            	'fields' => array('username'=> 'email'),
@@ -46,7 +52,7 @@ class AppController extends Controller {
 
 	    public function beforeFilter() {
 	        if (!isset($this->request->params['prefix']))
-	            $this->Auth->allow();
+	            $this->Auth->allow('login', 'logout', 'display');
 	        if (isset($this->request->params['prefix']) && $this->request->params['prefix'] == 'admin')
 	            $this->layout = 'admin';
 	    }

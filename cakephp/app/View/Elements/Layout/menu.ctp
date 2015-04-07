@@ -11,7 +11,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="index.php?chap=generalite" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Généralités <span class="caret"></span></a>
+          <?php echo $this->Html->link("Généralités <span class='caret'></span>", '#',array('class'=>'dropdown-toggle','data-toggle'=>'dropdown', 'role'=>'button', 'aria-expanded' => 'false', 'escape' =>false)); ?> 
+          <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Généralités <span class="caret"></span></a>-->
           <ul class="dropdown-menu" role="menu">
 			<li><a href="index.php?chap=mon_compte">Mon Compte</a></li>
             <li class="divider"></li>
@@ -65,6 +66,7 @@
           </ul>
         </li>
       </ul>
+      <!-- next features
       <ul class="nav navbar-nav navbar-right">
        <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -72,7 +74,7 @@
         </div>
         <button type="submit" class="btn btn-default">Rechercher</button>
        </form>
-      </ul>
+      </ul>-->
       </div><!-- /.navbar-collapse -->
 	</div>
   

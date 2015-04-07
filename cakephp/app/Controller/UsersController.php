@@ -6,7 +6,7 @@ class UsersController extends AppController {
     public function beforeFilter() {
 	    parent::beforeFilter();
 	    // Permet aux utilisateurs de s'enregistrer et de se déconnecter
-	    $this->Auth->allow('create_account', 'logout');
+	    $this->Auth->allow('create_account');
 	}
 
 	public function login() {
@@ -27,12 +27,18 @@ class UsersController extends AppController {
     }
 
 	public function logout() {
-	    return $this->redirect($this->Auth->logout());
+
+	    return $this->Auth->logout();
 	}
 
     public function index() {
+        //var_dump($this->Auth->user('id'));
+        $user= $this->User->find('first', array(
+            'conditions' => array('User.id' => $this->Auth->user('id'))
+        ));
         $this->User->recursive = 0;
-        $this->set('users', $this->paginate());
+       // var_dump($user);
+        $this->set('user', $user);
     }
 
     public function view($id = null) {
